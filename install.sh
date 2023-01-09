@@ -4,6 +4,7 @@ rm -rf $PREFIX/share/ngrok
 mkdir -p $PREFIX/share/ngrok
 #cp get-ngrok.sh $PREFIX/share/ngrok
 cp ngrok $PREFIX/bin
+chmod +x $PREFIX/bin/ngrok
 apt update && apt upgrade -y
 apt install -y proot wget resolv-conf
 #apt install zip
