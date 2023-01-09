@@ -1,2 +1,2 @@
 #!/bin/bash
-chroot -- $PREFIX/share/ngrok/ngrok "$@"
+chroot -- $PREFIX/share/ngrok ./ngrok "$@"
