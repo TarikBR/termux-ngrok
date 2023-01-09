@@ -30,9 +30,9 @@ x86_64)
     echo "Dispositivo não suportado"
 esac
 
-wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-stable-linux-${architectureURL}.zip -O ngrok.zip
-unzip ngrok.zip
-rm ngrok.zip
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-stable-linux-${architectureURL}.tgz -O ngrok.tgz
+tar xvzf ngrok.tgz
+rm ngrok.tgz
 chmod +x ngrok
 
 echo -e "\e[1;32mNgrok instalado com sucesso!"
