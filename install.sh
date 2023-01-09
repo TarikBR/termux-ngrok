@@ -6,6 +6,7 @@ mkdir -p $PREFIX/share/ngrok
 cp ngrok $PREFIX/bin
 apt update && apt upgrade -y
 apt install -y proot wget resolv-conf
+apt install zip
 apt clean
 apt autoremove
 cd $PREFIX/share/ngrok
