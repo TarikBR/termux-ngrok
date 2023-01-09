@@ -6,7 +6,7 @@ mkdir -p $PREFIX/share/ngrok
 cp ngrok $PREFIX/bin
 apt update && apt upgrade -y
 apt install -y proot wget resolv-conf
-apt install zip
+#apt install zip
 apt clean
 apt autoremove
 cd $PREFIX/share/ngrok
@@ -15,6 +15,8 @@ cd $PREFIX/share/ngrok
 echo "Baixando ngrok..."
 case `dpkg --print-architecture` in
 aarch64)
+    architectureURL="arm64" ;;
+arm64)
     architectureURL="arm64" ;;
 arm)
     architectureURL="arm" ;;
